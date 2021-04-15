@@ -1,0 +1,10 @@
+Package: enigma2-plugin-extensions-internet-speedtest
+Version: 1.0
+Section: misc
+Priority: optional
+Architecture: all
+Maintainer: madhouse
+Description: Speedtest for enigma2
+Source: https://github.com/m4dhouse/Internet-Speedtest
+OE: Enigma2 Plugin
+License: open

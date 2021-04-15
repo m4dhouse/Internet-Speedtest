@@ -1,0 +1,14 @@
+#!/bin/sh
+echo "*****************************************"
+echo "*      Internet SpeedTest Installed      *"
+echo "*****************************************"
+sleep 2
+echo $LINE
+echo "*****************************************"
+echo "*            Restart Enigma2            *"
+echo "*****************************************"
+sleep 2
+killall -9 enigma2
+rm -r /control > /dev/null 2>&1
+rm -r /var/volatile/tmp/*.ipk > /dev/null 2>&1
+exit 0
