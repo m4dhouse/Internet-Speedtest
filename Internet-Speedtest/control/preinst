@@ -1,6 +1,0 @@
-#!/bin/sh
-if [ -d /usr/lib/enigma2/python/Plugins/Extensions/InternetSpeedTest ]; then
-  rm -rf /usr/lib/enigma2/python/Plugins/Extensions/InternetSpeedTest
-  rm -rf /usr/lib/enigma2/python/Components/Converter/SP*
-fi;
-exit 0
