@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "*****************************************"
-echo "*      Internet SpeedTest Installed      *"
+echo "*      Internet SpeedTest Installed     *"
 echo "*****************************************"
 sleep 2
 echo $LINE
