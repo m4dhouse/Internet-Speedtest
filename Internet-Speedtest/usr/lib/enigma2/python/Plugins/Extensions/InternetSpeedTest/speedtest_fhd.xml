@@ -1,0 +1,27 @@
+<screen name="internetspeedtest" position="fill" title="Internet Speed Test" backgroundColor="transparent" flags="wfNoBorder">
+	<ePixmap position="70,1025" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetSpeedTest/buttons/red_fhd.png" size="30,30" alphatest="blend" zPosition="2" />
+	<widget name="key_red" position="120,995" size="210,95" zPosition="1" font="speedtest;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="#20000000" transparent="1" />
+	<ePixmap position="1670,1025" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetSpeedTest/buttons/green_fhd.png" size="30,30" alphatest="blend" zPosition="2" />
+	<widget name="key_green" position="1720,995" size="210,95" zPosition="1" font="speedtest;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="#20000000" transparent="1" />
+	<ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetSpeedTest/buttons/netspeed_fhd.jpg" zPosition="-1" />
+	<widget name="ip" position="210,20" size="300,200" font="speedtest;38" foregroundColor="#ffffff" backgroundColor="#20000000" transparent="1" halign="left"  zPosition="1" />
+	<widget name="host" position="1080,20" size="600,200" font="speedtest;35" foregroundColor="#ffffff" backgroundColor="#20000000" transparent="1" halign="right" zPosition="4" />
+	<widget name="download" position="20,440" size="600,600" font="speedtest;95" foregroundColor="#2d64a7" backgroundColor="#20000000" transparent="1" halign="left"  zPosition="4" />
+	<widget name="upload" position="1275,440" size="600,600" font="speedtest;95" foregroundColor="#9dc042" backgroundColor="#20000000" transparent="1" halign="right"  zPosition="4" />
+	<widget name="ping" position="840,840" size="600,200" font="speedtest;50" foregroundColor="#ccc036" backgroundColor="#20000000" transparent="1" halign="left"  zPosition="4" />
+	<widget name="data" position="center,745" size="1920,44" font="speedtest;36" foregroundColor="#9dc042" backgroundColor="#20000000" transparent="1" halign="center" zPosition="4" />
+  <widget source="session.CurrentService" render="Label" position="15,690" size="500,200" font="speedtest;50" foregroundColor="#ffffff" backgroundColor="#20000000" transparent="1" halign="center"  zPosition="4">
+    <convert type="SPNetSpeedInfo">RC</convert>
+  </widget>
+	<widget source="session.CurrentService" render="Label" position="1385,690" size="500,200" font="speedtest;50" foregroundColor="#ffffff" backgroundColor="#20000000" transparent="1" halign="center"  zPosition="4">
+    <convert type="SPNetSpeedInfo">TM</convert>
+  </widget>
+	<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetSpeedTest/buttons/lan_fhd.png" position="50,20" size="140,140" zPosition="2" scale="1" alphatest="blend" transparent="1">
+	<convert type="SPRouteInfo">Lan</convert>
+	<convert type="ConditionalShowHide" />
+	</widget>
+	<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetSpeedTest/buttons/wifi_fhd.png" position="50,20" size="140,140" zPosition="2" scale="1" alphatest="blend" transparent="1" >
+	<convert type="SPRouteInfo">Wifi</convert>
+	<convert type="ConditionalShowHide" />
+	</widget>
+</screen>
