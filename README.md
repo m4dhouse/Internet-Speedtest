@@ -1,5 +1,5 @@
-# Internet Speedtest
-Internet Speedtest for enigma2 (py2/py3)
+# Internet Speedtest for Enigma2 device
+Compatible with python2/3
 
 Plugin for test your internet speed
 
