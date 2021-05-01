@@ -1901,7 +1901,7 @@ def shell():
                         raise
         sys.exit(0)
 
-    printer('Testing download from %(isp)s (%(ip)s)...' % speedtest.config['client'],
+    printer('Testing download from %(isp)s (%(ip)s)' % speedtest.config['client'],
             quiet)
 
     if not args.mini:
@@ -1923,21 +1923,24 @@ def shell():
             )
 
         if args.server and len(args.server) == 1:
-            printer('Retrieving information for the selected server...', quiet)
+            pass
+#            printer('Retrieving information for the selected server...', quiet)
         else:
-            printer('Selecting best server based on ping...', quiet)
+            pass
+#            printer('Selecting best server based on ping...', quiet)
         speedtest.get_best_server()
     elif args.mini:
         speedtest.get_best_server(speedtest.set_mini_server(args.mini))
 
     results = speedtest.results
 
-    printer('Hosted by %(sponsor)s (%(name)s) [%(d)0.2f km]: '
-            '%(latency)s ms' % results.server, quiet)
+    printer('Hosted by %(sponsor)s (%(name)s)' % results.server, quiet)
+
+    printer('Ping %(latency)s ms' % results.server, quiet)        
 
     if args.download:
-        printer('Testing download speed', quiet,
-                end=('', '\n')[bool(debug)])
+#        printer('Testing download speed', quiet,
+#                end=('', '\n')[bool(debug)])
         speedtest.download(
             callback=callback,
             threads=(None, 1)[args.single]
@@ -1950,8 +1953,8 @@ def shell():
         printer('Skipping download test', quiet)
 
     if args.upload:
-        printer(' ', quiet,
-                end=('', '\n')[bool(debug)])
+#        printer(' ', quiet,
+#                end=('', '\n')[bool(debug)])
         speedtest.upload(
             callback=callback,
             pre_allocate=args.pre_allocate,
