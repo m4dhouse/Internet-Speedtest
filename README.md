@@ -3,8 +3,8 @@ Compatible with python2/3
 
 Plugin for test your internet speed
 
-![1](https://user-images.githubusercontent.com/35741027/116761134-16e4df80-aa17-11eb-92a8-7ea09e3423ba.jpg)
+![1](https://user-images.githubusercontent.com/35741027/116778637-69ec8000-aa73-11eb-9328-47e72974842a.jpg)
 
-![2](https://user-images.githubusercontent.com/35741027/116761140-1c422a00-aa17-11eb-8aec-f761b7e46f5e.jpg)
+![2](https://user-images.githubusercontent.com/35741027/116778641-6f49ca80-aa73-11eb-9ca9-f6f37504c0f1.jpg)
 
-![3](https://user-images.githubusercontent.com/35741027/116761144-2106de00-aa17-11eb-80d7-d0aabb21866e.jpg)
+![3](https://user-images.githubusercontent.com/35741027/116778648-753fab80-aa73-11eb-9c9f-b75d0b9dc30d.jpg)
