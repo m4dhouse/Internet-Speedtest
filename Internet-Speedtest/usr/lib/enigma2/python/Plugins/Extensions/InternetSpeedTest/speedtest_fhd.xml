@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-	<screen name="internetspeedtest" position="fill" title="Internet Speed Test" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="internetspeedtest" position="fill" title="Internet Speed Test" flags="wfNoBorder">
 		<ePixmap position="70,1025" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetSpeedTest/buttons/red_fhd.png" size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="key_red" position="120,995" size="210,95" zPosition="1" font="speedtest;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="#20000000" transparent="1" />
 		<widget name="green" position="560,1025" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetSpeedTest/buttons/green_fhd.png" alphatest="blend" zPosition="2" />
@@ -32,7 +32,7 @@
 		</widget>
 	</screen>
 
-	<screen name="showresult" position="fill" title="Internet Speed Test" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="showresult" position="fill" title="Internet Speed Test" flags="wfNoBorder">
 		<ePixmap position="70,1025" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetSpeedTest/buttons/red_fhd.png" size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="key_red" position="120,995" size="210,95" zPosition="1" font="speedtest;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="#20000000" transparent="1" />
 		<widget name="image" position="center,center" size="1300,693" zPosition="1" backgroundColor="#20000000" transparent="1" alphatest="blend"/>
