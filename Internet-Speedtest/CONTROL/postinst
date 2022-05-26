@@ -1,6 +1,7 @@
 #!/bin/sh
 echo "*****************************************"
 echo "*      Internet SpeedTest Installed     *"
+echo "*              By Madhouse              *"
 echo "*****************************************"
 sleep 2
 echo $LINE
