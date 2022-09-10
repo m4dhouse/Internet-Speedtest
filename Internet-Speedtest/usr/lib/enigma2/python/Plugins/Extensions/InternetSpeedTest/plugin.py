@@ -56,11 +56,13 @@ def _(txt):
 		return gettext.dgettext(PluginLanguageDomain, txt)
 	else:
 		return gettext.gettext(txt)
-language.addCallback(localeInit())
+
+localeInit()
+language.addCallback(localeInit)
 
 from enigma import addFont
 try:
-	addFont("%s/Roboto-Regular.ttf" % font, "speedtest", 100, 1)
+	addFont("%s/RegularFull.ttf" % font, "speedtest", 100, 1)
 except Exception as ex:
 	print(ex)
 
@@ -305,7 +307,7 @@ class ListServers(Screen):
 				self['introduction'].setText(_('Choose server and press ok'))
 				self.resultlist.append(searchResult)
 			except:
-				self.resultlist.append('No servers received!')
+				self.resultlist.append(_('No servers received!'))
 		self["wait"].setText("")
 		self['list'].setList(self.resultlist)
 
