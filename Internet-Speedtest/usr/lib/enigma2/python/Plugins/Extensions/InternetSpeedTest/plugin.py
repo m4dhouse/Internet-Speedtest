@@ -25,7 +25,7 @@ import sys
 plugin_path = '/usr/lib/enigma2/python/Plugins/Extensions/InternetSpeedTest/speedtest.py'
 font = resolveFilename(SCOPE_PLUGINS, "Extensions/InternetSpeedTest/fonts")
 skin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/InternetSpeedTest/")
-cmd = 'python ' + plugin_path + ' --no-pre-allocate --share --secure'
+cmd = 'python ' + plugin_path + ' --no-pre-allocate --share'
 png_tmp = '/tmp/speedtest.png'
 headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
 	   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -351,7 +351,7 @@ class ListServersFav(Screen):
 			'Help': self.listServer,
 			'yellow': self.save_result}, -2)
 		self.server = config.internetspeedtest.server.value
-		self.cmd = 'python ' + plugin_path + ' --no-pre-allocate --server %s --share --secure' % (self.server)
+		self.cmd = 'python ' + plugin_path + ' --no-pre-allocate --server %s --share' % (self.server)
 		self.finished = False
 		self.data = ''
 		self.container = eConsoleAppContainer()
