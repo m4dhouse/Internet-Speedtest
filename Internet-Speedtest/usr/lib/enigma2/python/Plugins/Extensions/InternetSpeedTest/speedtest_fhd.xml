@@ -31,6 +31,10 @@
 			<convert type="SPRouteInfo">Wifi</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
+		<widget source="session.CurrentService" render="Label" position="50,175" size="140,50" halign="center" font="speedtest;45" foregroundColor="#ffffff" backgroundColor="#20000000" zPosition="3" transparent="1" >
+			<convert type="SPRouteInfo">Vpn</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
 	</screen>
 
 	<screen name="ListServersFav" position="fill" flags="wfNoBorder">
@@ -62,6 +66,10 @@
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InternetSpeedTest/buttons/wifi_fhd.png" position="50,20" size="140,140" zPosition="2" scale="1" alphatest="blend" transparent="1" >
 			<convert type="SPRouteInfo">Wifi</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="50,175" size="140,50" halign="center" font="speedtest;45" foregroundColor="#ffffff" backgroundColor="#20000000" zPosition="3" transparent="1" >
+			<convert type="SPRouteInfo">Vpn</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
